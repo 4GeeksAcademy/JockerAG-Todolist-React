@@ -34,7 +34,7 @@ export const ToDoList = () => {
                 }
             }}
             className="container d-flex flex-column align-items-center justify-content-center mt-5">
-                <h1 className="fw-bold mb-4">To Do List</h1>
+                <h1 className="fw-bold mb-4 text-primary">To Do List</h1>
                 <input className="form-control form-control-lg" type="text" placeholder="Nueva Tarea" aria-label=".form-control-lg example" value={input} onChange={(event) => setInput(event.target.value)}></input>
                 {todos.map((item, idx) => (
                     <TodoItem
