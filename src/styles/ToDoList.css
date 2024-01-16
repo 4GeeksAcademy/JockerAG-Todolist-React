@@ -1,0 +1,24 @@
+.todo-item{
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.5rem;
+}
+
+.todo-item button {
+    margin-left: auto;
+}
+
+input:checked ~ span.todo-text {
+    opacity: 0.5;
+    font-weight: 300;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+span-todo-text{
+    transition: opacity 0.5s ease-in-out;
+}
